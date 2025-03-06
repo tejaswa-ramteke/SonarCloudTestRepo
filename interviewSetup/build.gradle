@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id "org.sonarqube" version "6.0.1.5171"
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -10,4 +11,12 @@ repositories {
 
 dependencies {
     testImplementation 'junit:junit:4.11'
+}
+
+sonar {
+    properties {
+        property "sonar.projectKey", "tejaswa-ramteke_test-project"
+        property "sonar.organization", "tejaswa-ramteke"
+        property "sonar.host.url", "https://sonarcloud.io"
+    }
 }
