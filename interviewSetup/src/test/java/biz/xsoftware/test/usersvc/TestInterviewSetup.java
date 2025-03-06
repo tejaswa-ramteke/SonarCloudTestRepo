@@ -21,6 +21,7 @@ public class TestInterviewSetup extends TestCase {
 	public void testSimple() {
 		MyLib lib = new MyLib();
 		lib.printTest1();
+		lib.riskyMethod();
 	}
 
 }
