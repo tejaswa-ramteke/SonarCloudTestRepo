@@ -41,9 +41,5 @@ public class TestItemManager extends TestCase {
             // Expected exception
         }
     }
-
-    public void testBuggyMethod() {
-        String s = null;
-        System.out.println(s.length()); // This will throw NullPointerException
-    }
+    
 }
